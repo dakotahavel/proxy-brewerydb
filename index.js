@@ -19,7 +19,7 @@ app.get('/api', function(req, res){ // listens for request on /api route
   request('https://api.brewerydb.com/v2/locations/?key=c380ced21d6eab9b00b3d58e2562af1b' +
   '&isClosed=N' +
   '&locationType=micro,macro,nano,production,brewpub' +
-  '&region=' + region
+  '&region=' + region +
   '&p=' + page
   , function (error, response, body) { // api url
     if (!error && response.statusCode === 200) {
